@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Console.WriteLine("Enter a character");
+char input = Console.ReadLine()[0];
+
+int asciiValue = (int)input;
+
+Console.WriteLine($"ASCII value of '{input}' is : {asciiValue}");
