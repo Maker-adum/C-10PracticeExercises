@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Console.Write("Enter a date (yyyy-mm-dd): ");
+DateTime date = DateTime.Parse(Console.ReadLine());
+
+Console.WriteLine(date.DayOfWeek);
