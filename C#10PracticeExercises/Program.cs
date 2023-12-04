@@ -1,2 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Console.Write("Enter a number: ");
+int number = int.Parse(Console.ReadLine());
+
+bool isPositive = number > 0;
+Console.WriteLine(isPositive);
+
+
