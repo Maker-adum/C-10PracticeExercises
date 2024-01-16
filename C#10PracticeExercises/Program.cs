@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Console.Write("Enter a decimal value: ");
+decimal value = decimal.Parse(Console.ReadLine());
+
+string formattedValue = value.ToString("F2");
+
+Console.WriteLine("Formatted value: " + formattedValue);
