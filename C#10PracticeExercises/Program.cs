@@ -1,2 +1,19 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter a number: ");
+        int number = Convert.ToInt32(Console.ReadLine());
+
+        if (number % 2 == 0)
+        {
+            Console.WriteLine("The number is even.");
+        }
+        else
+        {
+            Console.WriteLine("The number is odd."); // Fix: prints "odd" if the number is odd
+        }
+    }
+}
