@@ -5,19 +5,17 @@ class Program
 {
     static void Main()
     {
-        string filePath = "input.txt";
+        string path = "input.txt";
 
-        // Read the contents of the file
-        using (StreamReader reader = new StreamReader(filePath))
+            using (StreamReader reader = new StreamReader(path))
+            {
+                string fileContent = reader.ReadToEnd();
+                Console.WriteLine("File contents:");
+                Console.WriteLine(fileContent);
+            }
+        
         {
-            string fileContents = reader.ReadToEnd();
-
-            // Print the contents to the console
-            Console.WriteLine("File contents:");
-            Console.WriteLine(fileContents);
+            Console.WriteLine("An error occurred while accessing the file: ");
         }
-
-        // The program continues executing after the using block
-        Console.WriteLine("File reading complete.");
     }
 }
