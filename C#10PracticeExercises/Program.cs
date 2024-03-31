@@ -5,17 +5,20 @@ class Program
 {
     static void Main()
     {
-        string path = "input.txt";
+        string filePath = "input.txt";
 
-            using (StreamReader reader = new StreamReader(path))
-            {
-                string fileContent = reader.ReadToEnd();
-                Console.WriteLine("File contents:");
-                Console.WriteLine(fileContent);
-            }
-        
+        if (File.Exists(filePath))
         {
-            Console.WriteLine("An error occurred while accessing the file: ");
+            using (StreamReader reader = new StreamReader(filePath))
+            {
+                string fileContents = reader.ReadToEnd();
+                Console.WriteLine("Hello I love Programming:");
+                Console.WriteLine(fileContents);
+            }
+        }
+        else
+        {
+            Console.WriteLine("File not found: input.txt");
         }
     }
 }
