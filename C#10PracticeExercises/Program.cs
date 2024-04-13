@@ -8,7 +8,7 @@ class Program
         Console.Write("Enter a sentence: ");
         string sentence = Console.ReadLine();
 
-        sentence = sentence.Trim();
+         sentence = sentence.Trim();
 
         string[] words = Regex.Split(sentence, @"\s+");
 
@@ -17,3 +17,13 @@ class Program
         Console.WriteLine($"Number of words in the sentence: {wordCount}");
     }
 }
+
+
+
+
+
+
+
+
+
+
